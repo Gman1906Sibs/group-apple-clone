@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    height: 100vh;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+
+.nav-upper {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+.nav-icon {
+    padding: 20px 0;
+    width: 30px;
+}
