@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navber";
 import CartSideBar from "../components/CartSideBar";
+import { productsData } from "../assets/data/productData";
 import HomeProductCard from "../components/HomeProductCard";
 
 function Home() {
@@ -14,7 +15,9 @@ function Home() {
                     <input className="search-input" placeholder="Apple Watch, Samsung S21, Macbook Pro, ..."></input>
                 </div>
                 <div className="product-list">
-                    
+                {productsData.map((products) =>
+                    <HomeProductCard key={products.id} id={products.id} title={products.title} image={products.image} price={products.price} description={products.description} />
+                )}
                 </div>
             </div>
         </div>

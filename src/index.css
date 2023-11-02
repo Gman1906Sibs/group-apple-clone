@@ -19,9 +19,15 @@ code {
   justify-content: center;
 }
 
+.search-heading{
+  display: flex;
+  justify-content: center;
+}
+
 .search-input{
   width: 507px;
   height: 40px;
   border-radius: 13px;
   padding: 8px 16px;
+  margin: auto;
 }

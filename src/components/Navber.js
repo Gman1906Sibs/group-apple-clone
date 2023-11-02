@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import Logo from "../assets/icons/Logo.svg";
 import Menu from "../assets/icons/Menu.svg";
-import Home from "../assets/icons/Home.svg";
+import Home from "../assets/icons/Home.png";
 import Basket from "../assets/icons/Basket.svg";
 import Logout from "../assets/icons/Logout.svg";
 import { Link } from "react-router-dom";
