@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomeProductCard.css"
+import { Link } from "react-router-dom";
 
 function HomeProductCard({ image, title, price, model }) {
     return (
@@ -12,6 +13,7 @@ function HomeProductCard({ image, title, price, model }) {
                 <p>{model}</p>
                 <p>R {price}</p>
             </div>
+            <Link to={`/productDetails`}>More</Link>
         </div>
     );
 }
