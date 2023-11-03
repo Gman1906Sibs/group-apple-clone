@@ -1,0 +1,14 @@
+.productCard{
+    width: 200px;
+}
+
+.imgContainer{
+    background-color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img{
+    max-width: 180px;
+}

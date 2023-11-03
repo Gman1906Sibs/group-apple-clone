@@ -31,3 +31,10 @@ code {
   padding: 8px 16px;
   margin: auto;
 }
+
+.product-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 100px;
+  padding: 50px 0;
+}

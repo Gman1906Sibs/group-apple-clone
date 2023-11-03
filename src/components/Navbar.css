@@ -1,4 +1,5 @@
 .navbar {
+    position: fixed;
     background-color: #FFF;
     display: flex;
     flex-direction: column;
