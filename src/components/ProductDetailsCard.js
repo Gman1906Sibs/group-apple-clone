@@ -1,8 +1,10 @@
-import React from 'react'
-import "./ProductDetailsCard.css"
-import { Link } from 'react-router-dom';
+import React from 'react';
+import "./ProductDetailsCard.css";
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cartSlice';
 
 function ProductDetailsCard({ title, image, id, description, model, rating, price }) {
+    const dispatch = useDispatch();
     return (
         <div className='productDetailsCard'>
             <div className='productDetailsTopSection'>
@@ -13,7 +15,7 @@ function ProductDetailsCard({ title, image, id, description, model, rating, pric
                     <p className='productDetailsRating'>{rating} / 5</p>
                     <p className='productDetailsPrice'>R {price}</p>
                     <p className='productDetailsDescription'>{description}</p>
-                    <Link>Add To Cart</Link>
+                    <button onClick={ () => dispatch(addToCart({title, image, id}))}>Add To Cart</button>
                 </div>
                 
             </div>
