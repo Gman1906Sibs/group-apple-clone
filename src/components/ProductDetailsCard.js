@@ -15,7 +15,7 @@ function ProductDetailsCard({ title, image, id, description, model, rating, pric
                     <p className='productDetailsRating'>{rating} / 5</p>
                     <p className='productDetailsPrice'>R {price}</p>
                     <p className='productDetailsDescription'>{description}</p>
-                    <button onClick={ () => dispatch(addToCart({title, image, id}))}>Add To Cart</button>
+                    <button onClick={ () => dispatch(addToCart({title, image, id, description, model, rating, price}))}>Add To Cart</button>
                 </div>
                 
             </div>

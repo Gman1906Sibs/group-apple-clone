@@ -5,6 +5,7 @@ import ProductDetails from './pages/ProductDetails';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/productDetails/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />}/>
+          <Route path="/checkout" element={<Checkout />}/>
         </Routes>
       </Router>
     </Provider>
