@@ -2,6 +2,7 @@ import React from 'react';
 import "./ProductDetailsCard.css";
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
+import { FaShoppingBag } from "react-icons/fa";
 
 function ProductDetailsCard({ title, image, id, description, model, rating, price }) {
     const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function ProductDetailsCard({ title, image, id, description, model, rating, pric
                     <p className='productDetailsRating'>{rating} / 5</p>
                     <p className='productDetailsPrice'>R {price}</p>
                     <p className='productDetailsDescription'>{description}</p>
-                    <button onClick={ () => dispatch(addToCart({title, image, id, description, model, rating, price}))}>Add To Cart</button>
+                    <button className='bag-btn' onClick={ () => dispatch(addToCart({title, image, id, description, model, rating, price}))}><FaShoppingBag /> Add To Bag</button>
                 </div>
                 
             </div>

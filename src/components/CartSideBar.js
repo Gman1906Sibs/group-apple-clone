@@ -2,6 +2,7 @@ import React from "react";
 import "./CartSideBar.css"
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FaShoppingBag } from "react-icons/fa";
 
 function CartSideBar() {
     const cartItems = useSelector(state => state.cart.cart)
@@ -10,12 +11,12 @@ function CartSideBar() {
             <h4 className="cart-title">Bag</h4>
             <div className="cart-items">{cartItems.map(item => {
                 return (
-                    <div>
+                    <div className="cart-img">
                         <img src={item.image} alt=""/>
                     </div>
                 );
             })}</div>
-            <Link to="/cart" className="cart-btn">View Bag</Link>
+            <Link to="/cart" className="cart-btn"><FaShoppingBag /> View Bag</Link>
         </div>
     );
 }

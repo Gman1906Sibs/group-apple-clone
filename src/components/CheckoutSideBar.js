@@ -2,6 +2,7 @@ import React from "react";
 import "./CartSideBar.css"
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FaShoppingBag } from "react-icons/fa";
 
 function CheckoutSideBar() {
     const cartItems = useSelector(state => state.cart.cart)
@@ -15,7 +16,7 @@ function CheckoutSideBar() {
                     </div>
                 );
             })}</div>
-            <Link to="/checkout" className="cart-btn">Checkout</Link>
+            <Link to="/checkout" className="cart-btn"><FaShoppingBag /> Checkout</Link>
         </div>
     );
 }

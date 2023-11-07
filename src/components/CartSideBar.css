@@ -26,3 +26,7 @@
     border-radius: 14px;
     padding: 8px 24px;
 }
+
+.cart-img img{
+    width: 60px;
+}

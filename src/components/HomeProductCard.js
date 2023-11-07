@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeProductCard.css"
 import { Link } from "react-router-dom";
+import { FaShoppingBag } from "react-icons/fa";
 
 function HomeProductCard({ image, title, price, model, id}) {
     return (
@@ -11,9 +12,10 @@ function HomeProductCard({ image, title, price, model, id}) {
             <div>
                 <h5>{title}</h5>
                 <p>{model}</p>
+                <Link to={`/productDetails/${id}`} className="product-details-btn"><FaShoppingBag /></Link>
                 <p>R {price}</p>
             </div>
-            <Link to={`/productDetails/${id}`}>More</Link>
+            
         </div>
     );
 }
