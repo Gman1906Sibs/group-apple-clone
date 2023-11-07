@@ -6,6 +6,9 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import Payment from './pages/Payment';
+import Shipping from './pages/Shipping';
+import SuccessfullOrder from './pages/OrderSuccess';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
           <Route path="/productDetails/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />}/>
           <Route path="/checkout" element={<Checkout />}/>
+          <Route path="/payment" element={<Payment />}/>
+          <Route path="/shipping" element={<Shipping />}/>
+          <Route path="/success" element={<SuccessfullOrder />}/>
         </Routes>
       </Router>
     </Provider>
